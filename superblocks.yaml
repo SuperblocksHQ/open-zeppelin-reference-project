@@ -5,6 +5,7 @@ jobs:
     script:
       - npm install
       - npx run test
+      
 stages:
   - pipeline:
       jobs:
