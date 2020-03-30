@@ -5,7 +5,9 @@ const { SuperHDWalletProvider, ManualSignProvider } = require("super-web3-provid
 async function main(network) {
 
   let provider;
-  if (network === 'ropsten_metamask') {
+  if (process.env.PROVIDER_URL) {
+    provider = process.env.PROVIDER_URL 
+  } else if (network === 'ropsten_metamask') {
      provider = new ManualSignProvider({
       projectId: '5e81dee85c27530018e59ffb',
       token: '4Z0v6K62Ahu0zKDv/omR/pbB7VO2BLZojt8vM/X9nxRA663AmS8P2pse',
