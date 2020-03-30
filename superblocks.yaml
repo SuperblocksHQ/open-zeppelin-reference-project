@@ -5,7 +5,7 @@ jobs:
     image: node:12
     script:
       - npm install
-      - npx run test
+      - npm run test
 
   # This job signs the transactions directly in the runner using a mnemonic 12 and still
   # allow you to keep track of all the details of the deployment inside the platform. 
