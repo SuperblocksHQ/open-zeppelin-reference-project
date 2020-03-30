@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@openzeppelin/contract-loader": "0.6.0",
-    "web3": "1.2.2"
+    "@truffle/hdwallet-provider": "^1.0.17",
+    "web3": "1.2.2",
+    "super-web3-provider": "0.0.19"
   },
   "devDependencies": {
     "@openzeppelin/cli": "2.8.0-rc.0",
