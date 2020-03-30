@@ -2,7 +2,7 @@
 /zos.dev*
 .zos*
 .zos.session
-.openzeppelin/*
+.openzeppelin/.session
+.openzeppelin/dev-*
 node_modules
-dev-**.json
 .session
