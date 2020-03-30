@@ -18,7 +18,8 @@ jobs:
         name: ethereum/deploy
     script:
         - npm install
-        - npx openzeppelin deploy Counter --network development --no-interactive --kind regular
+        - npx openzeppelin compile --no-interactive
+        - npm run deploy
 
 stages:
   - build:

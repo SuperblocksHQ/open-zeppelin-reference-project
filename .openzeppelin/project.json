@@ -16,7 +16,10 @@
       }
     },
     "artifactsDir": "build/contracts",
-    "contractsDir": "contracts"
+    "contractsDir": "contracts",
+    "typechain": {
+      "enabled": false
+    }
   },
   "telemetryOptIn": false
 }

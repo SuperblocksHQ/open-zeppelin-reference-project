@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "test": "scripts/test-ci.sh",
-    "deploy": "tsc"
+    "deploy": "node src/deploy.js",
+    "deploy:metamask": "node src/deploy.js ropsten_metamask"
   },
   "dependencies": {
     "@openzeppelin/contract-loader": "0.6.0",
