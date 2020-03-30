@@ -30,7 +30,7 @@ $oz --version
 $oz push --network test --no-interactive
 $oz deploy Counter --network test --kind regular --no-interactive 
 
-RESULT=$(PROVIDER_URL="http://localhost:${ganache_port}" node src/index.js)
+RESULT=$(PROVIDER_URL="http://localhost:${ganache_port}" node src/deploy.js)
 if [ "$RESULT" != "20" ]; then
   echo "Invalid result. Expected 20, got $RESULT."
   exit 1
